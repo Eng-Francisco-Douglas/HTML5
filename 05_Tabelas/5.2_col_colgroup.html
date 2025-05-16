@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com col e colgroup</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        colgroup col:first-child {
+            background-color: #f2f2f2; /* Estiliza a primeira coluna */
+        }
+        colgroup col:nth-child(2) {
+            background-color: #d0f0d0; /* Estiliza a segunda coluna */
+        }
+        colgroup col:nth-child(3) {
+            background-color: #f0d0d0; /* Estiliza a terceira coluna */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabela com col e colgroup</h1>
+    <table>
+        <colgroup>
+            <col> <!-- Primeira coluna -->
+            <col> <!-- Segunda coluna -->
+            <col> <!-- Terceira coluna -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>28</td>
+                <td>Belo Horizonte</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabela com Colspan e Rowspan</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th colspan="2">Contato</th> <!-- Colspan: Mescla duas colunas -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td> <!-- Rowspan: Mescla duas linhas -->
+                <td>25</td>
+                <td>Email</td>
+                <td>joao@email.com</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Telefone</td>
+                <td>(11) 1234-5678</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td colspan="2">maria@email.com</td> <!-- Colspan: Mescla duas colunas -->
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>28</td>
+                <td>Email</td>
+                <td>pedro@email.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Tabela de exemplo com colspan e rowspan</td> <!-- Colspan: Mescla todas as colunas -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
